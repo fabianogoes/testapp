@@ -1,1 +1,3 @@
 # myapp
+
+### deploy openshift
