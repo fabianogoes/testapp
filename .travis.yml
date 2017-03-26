@@ -1,5 +1,5 @@
 language: java
-script: mvn package -Popenshift
+script: mvn clean package -Popenshift
 jdk:
 - oraclejdk7
 - openjdk7
