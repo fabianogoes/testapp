@@ -17,7 +17,7 @@ public class MyappApplication {
 	
 	@RequestMapping
 	public String welcome(){
-		return "App Backend";
+		return "App Backend 1.0";
 	}
 
 	@RequestMapping("/{name}")
