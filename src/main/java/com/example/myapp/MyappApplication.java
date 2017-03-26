@@ -17,7 +17,7 @@ public class MyappApplication {
 	
 	@RequestMapping
 	public String welcome(){
-		return "Welcome to API";
+		return "App Backend";
 	}
 
 	@RequestMapping("/{name}")
