@@ -16,7 +16,7 @@ public class MyappApplication {
 	
 	@RequestMapping
 	public String welcome(){
-		return "Welcome to Myapp!!!";
+		return "Welcome to Myapp on Openshift!!!";
 	}
 	
 }
