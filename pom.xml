@@ -94,7 +94,7 @@
 	     <!-- http://maven.apache.org/guides/mini/guide-building-for-different-environments.html -->
 	     <id>openshift</id>
 	     <build>
-		<finalName>app</finalName>
+		<finalName>apptest</finalName>
 		<plugins>
 		  <plugin>
 			<groupId>org.apache.maven.plugins</groupId>
@@ -102,8 +102,8 @@
 			<version>2.3</version>
 			<configuration>
 			    <failOnMissingWebXml>false</failOnMissingWebXml>
-			    <outputDirectory>target</outputDirectory>
-				  <warName>app</warName>
+			    <outputDirectory>deployments</outputDirectory>
+				  <warName>ROOT</warName>
 			</configuration>
 		    </plugin>
 		</plugins>
