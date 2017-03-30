@@ -15,12 +15,16 @@ jdk:
 #  - sudo apt-get update && sudo apt-get install oracle-java8-installer
 #  - java -version
 
-deploy:
-  provider: openshift
-  user: fabianogoes@gmail.com
-  password:
-    secure: UGTRAIU17EmjFguIhrra9g9M0UCj6kOc7a50YwZTES7pX6Mo/zkPU8XnRnZ2oVMV6CfQgG8ilxI4MN1f3Uf5ncpcXf0pFLL4JIXhvLY8YV8LAMlfyYZVprPtHz916OoSUG4C8h3zXrUMD8TUzDnct9d6Y25BBuNFv32+qz3GZs/g0MBVDRwcuFxFVbnnUMGZbsBzPjSchzuvXC4f2ggMOLASkvhhf6aIzNUTOI5wWMZuPrDK3j3OgSDGzebfboEl14CUM3ZdMVojh/0OQUBIGkabThDlS/07Gt3AMpy9PZkf0xW2gnCYPGXr4FMMcKmaQwORZkyqpP7PxgYpx+s/8l4mgC3tXD6mbooCUJ+vGg2PT3Oa+eWJf0JvrLbE0CQ+iEl9VkPab9J8eNeYt3KRe2+f7z98wGgnLYUZb/MhysO0FLoK94HgTYmJTqviqcPg+hyY3CxrLEKYz0J3jP9r8rh7aj3Sn12xu+j6+5dvmPWq0uVnOcioAh/8/kFledQnhwgt5K9Wi8XEh5SD9r51xe3hhTIebdhihCek6GZ7iKZao4wEvMck66U3oXBX94w69t7fG5ojseCaF54Ebc/ovSFK1kh0mPRvoSyvMK6zjCirRqI3jWmZ6SQvF96PRp3FyAlddvqjBjwH6TiNxSv2WGjFZ/gEwK0r6hly3S6CTa0=
-  app: app
-  domain: fabianoggoes
-  on:
-    repo: fabianogoes/app
+#deploy:
+#  provider: openshift
+#  user: fabianogoes@gmail.com
+#  password:
+#    secure: UGTRAIU17EmjFguIhrra9g9M0UCj6kOc7a50YwZTES7pX6Mo/zkPU8XnRnZ2oVMV6CfQgG8ilxI4MN1f3Uf5ncpcXf0pFLL4JIXhvLY8YV8LAMlfyYZVprPtHz916OoSUG4C8h3zXrUMD8TUzDnct9d6Y25BBuNFv32+qz3GZs/g0MBVDRwcuFxFVbnnUMGZbsBzPjSchzuvXC4f2ggMOLASkvhhf6aIzNUTOI5wWMZuPrDK3j3OgSDGzebfboEl14CUM3ZdMVojh/0OQUBIGkabThDlS/07Gt3AMpy9PZkf0xW2gnCYPGXr4FMMcKmaQwORZkyqpP7PxgYpx+s/8l4mgC3tXD6mbooCUJ+vGg2PT3Oa+eWJf0JvrLbE0CQ+iEl9VkPab9J8eNeYt3KRe2+f7z98wGgnLYUZb/MhysO0FLoK94HgTYmJTqviqcPg+hyY3CxrLEKYz0J3jP9r8rh7aj3Sn12xu+j6+5dvmPWq0uVnOcioAh/8/kFledQnhwgt5K9Wi8XEh5SD9r51xe3hhTIebdhihCek6GZ7iKZao4wEvMck66U3oXBX94w69t7fG5ojseCaF54Ebc/ovSFK1kh0mPRvoSyvMK6zjCirRqI3jWmZ6SQvF96PRp3FyAlddvqjBjwH6TiNxSv2WGjFZ/gEwK0r6hly3S6CTa0=
+#  app: app
+#  domain: fabianoggoes
+#  on:
+#    repo: fabianogoes/app
+
+after_success:
+  - echo '>>> after_success <<<'
+  - echo '> BUILD: '$TRAVIS_BUILD_NUMBER' - '$TRAVIS_COMMIT_MESSAGE
