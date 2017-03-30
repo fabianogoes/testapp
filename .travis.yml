@@ -25,7 +25,7 @@ deploy:
   on:
     repo: fabianogoes/testapp
 
-#after_success:
+after_success:
   - echo ">>> after_success <<<"
 
 before_script:
