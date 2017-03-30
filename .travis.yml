@@ -5,8 +5,8 @@ script: mvn clean package -Popenshift
 #sudo: required
 
 jdk:
- - oraclejdk8
-# - oraclejdk7
+# - oraclejdk8
+ - oraclejdk7
 # - openjdk7
 
 #install: true
@@ -15,7 +15,8 @@ jdk:
 #  - sudo apt-get update && sudo apt-get install oracle-java8-installer
 #  - java -version
 
-#deploy:
+deploy:
+  - echo ">>> Deploing <<<"
 #  provider: openshift
 #  user: fabianogoes@gmail.com
 #  password:
@@ -23,7 +24,7 @@ jdk:
 #  app: app
 #  domain: fabianoggoes
 #  on:
-#    repo: fabianogoes/app
+#    repo: fabianogoes/apptest
 
 #after_success:
 before_script:
