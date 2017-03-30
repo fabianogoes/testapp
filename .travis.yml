@@ -27,6 +27,7 @@ deploy:
 
 after_success:
   - echo ">>> after_success <<<"
+  - echo $TRAVIS_BUILD_ID
   - echo $TRAVIS_BUILD_NUMBER
   - echo $TRAVIS_COMMIT_MESSAGE
 
