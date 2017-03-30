@@ -16,7 +16,6 @@ script:
   - mvn -version
 
 deploy:
-  - echo ">>> Deploing <<<"
   provider: openshift
   user: fabianogoes@gmail.com
   password:
