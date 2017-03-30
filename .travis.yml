@@ -27,6 +27,7 @@ deploy:
 
 after_success:
   - echo ">>> after_success <<<"
+  - echo $TRAVIS_BUILD_NUMBER
 
 before_script:
   - echo '>>> before_script <<<'
