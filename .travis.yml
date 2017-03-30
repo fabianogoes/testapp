@@ -30,5 +30,5 @@ after_success:
 
 before_script:
   - echo ">>> before_script <<<"
-  - echo "> TRAVIS_BUILD_NUMBER: "$TRAVIS_BUILD_NUMBER
-  - echo "> TRAVIS_COMMIT_MESSAGE: "$TRAVIS_COMMIT_MESSAGE
+  - echo "> BUILD-NUMBER: " $TRAVIS_BUILD_NUMBER
+  - echo "> COMMIT-MESSAGE: "$TRAVIS_COMMIT_MESSAGE
