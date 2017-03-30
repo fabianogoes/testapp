@@ -4,12 +4,9 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example</groupId>
-	<artifactId>app</artifactId>
+	<artifactId>testapp</artifactId>
 	<version>0.0.1</version>
 	<packaging>war</packaging>
-
-	<name>app</name>
-	<description></description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -56,7 +53,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>app</finalName>
+		<finalName>testapp</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -94,7 +91,7 @@
 	     <!-- http://maven.apache.org/guides/mini/guide-building-for-different-environments.html -->
 	     <id>openshift</id>
 	     <build>
-		<finalName>apptest</finalName>
+		<finalName>testapp</finalName>
 		<plugins>
 		  <plugin>
 			<groupId>org.apache.maven.plugins</groupId>
@@ -102,7 +99,7 @@
 			<version>2.3</version>
 			<configuration>
 			    <failOnMissingWebXml>false</failOnMissingWebXml>
-			    <outputDirectory>deployments</outputDirectory>
+			    <outputDirectory>webapps</outputDirectory>
 				  <warName>ROOT</warName>
 			</configuration>
 		    </plugin>

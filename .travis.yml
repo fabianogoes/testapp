@@ -24,7 +24,7 @@ deploy:
   app: apptest
   domain: fabianoggoes
   on:
-    repo: fabianogoes/apptest
+    repo: fabianogoes/testapp
 
 #after_success:
   - echo ">>> after_success <<<"
